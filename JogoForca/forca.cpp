@@ -2,9 +2,6 @@
 #include <string>
 #include <map>
 #include <vector>
-#include <fstream>
-#include <ctime>
-#include <cstdlib>
 #include "imprime_cabecalho.hpp"
 #include "sorteia_palavra.hpp"
 #include "nao_acertou.hpp"

@@ -22,7 +22,6 @@
     <ClCompile Include="adiciona_palavra.cpp" />
     <ClCompile Include="chuta.cpp" />
     <ClCompile Include="forca.cpp" />
-    <ClCompile Include="imprime_cabecalho.cpp" />
     <ClCompile Include="imprime_erros.cpp" />
     <ClCompile Include="imprime_palavra.cpp" />
     <ClCompile Include="letra_existe.cpp" />
