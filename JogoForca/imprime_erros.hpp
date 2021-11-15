@@ -2,4 +2,4 @@
 
 #include <vector>
 
-void imprime_erros(std::vector<char> chutes_errados);
+void imprime_erros(const std::vector<char>& chutes_errados);
