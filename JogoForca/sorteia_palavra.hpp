@@ -2,4 +2,6 @@
 
 #include <string>
 
-std::string sorteia_palavra();
+namespace Forca {
+	std::string sorteia_palavra();
+}

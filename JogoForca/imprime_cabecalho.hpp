@@ -2,9 +2,13 @@
 
 #include <iostream>
 
-inline void imprime_cabecalho() {
-    std::cout << "*********************" << std::endl;
-    std::cout << "*** Jogo da Forca ***" << std::endl;
-    std::cout << "*********************" << std::endl;
-    std::cout << std::endl;
+namespace Forca {
+    inline void imprime_cabecalho() {
+        using namespace std;
+
+        cout << "*********************" << endl;
+        cout << "*** Jogo da Forca ***" << endl;
+        cout << "*********************" << endl;
+        cout << endl;
+    }
 }

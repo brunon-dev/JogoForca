@@ -12,23 +12,24 @@
 
 using namespace std;
 
-std::string palavra_secreta = "MELANCIA";
-
-map<char, bool> chutou;
-vector<char> chutes_errados;
+// static controla o escopo das variáveis - identifica que a variável só existe nesta Translation Unit
+static string palavra_secreta = "MELANCIA";
+static map<char, bool> chutou;
+static vector<char> chutes_errados;
 
 int main () {
+    using namespace Forca;
 
     imprime_cabecalho();
 
     palavra_secreta = sorteia_palavra();
 
     while (nao_acertou(palavra_secreta, chutou) && (chutes_errados.size() < 5)) {
-        imprime_erros(chutes_errados);
+        Forca::imprime_erros(chutes_errados);
 
         imprime_palavra(palavra_secreta, chutou);
 
-        chuta(&chutou, &chutes_errados);
+        chuta(&chutou, &chutes_errados, palavra_secreta);
     }
 
     cout << "Fim de jogo!" << endl;

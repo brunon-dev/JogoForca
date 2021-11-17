@@ -5,14 +5,18 @@
 #include "le_arquivo.hpp"
 #include "salva_arquivo.hpp"
 
-void adiciona_palavra() {
-    std::cout << std::endl;
-    std::cout << "Digite uma palavra, usando letras maiúsculas." << std::endl;
-    std::string nova_palavra;
-    std::cin >> nova_palavra;
+namespace Forca {
+    void adiciona_palavra() {
+        using namespace std;
 
-    std::vector<std::string> lista_palavras = le_arquivo();
-    lista_palavras.push_back(nova_palavra);
+        cout << endl;
+        cout << "Digite uma palavra, usando letras maiúsculas." << endl;
+        string nova_palavra;
+        cin >> nova_palavra;
 
-    salva_arquivo(lista_palavras);
+        vector<string> lista_palavras = le_arquivo();
+        lista_palavras.push_back(nova_palavra);
+
+        salva_arquivo(lista_palavras);
+    }
 }
